@@ -11,6 +11,7 @@ def firepin( param ):
   # Cool all the pins (low voltage level)
   for pin in pins:
     GPIO.output(pin, GPIO.LOW)
+  # Fire the active pin
   currpin = pins[ param ]
   GPIO.output(currpin, GPIO.HIGH)
 
